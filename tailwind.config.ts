@@ -8,11 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        urbanist: ["Urbanist"],
       },
+    },
+    colors: {
+      "primary-100": "#C0DBC6",
+      "primary-200": "#CACA59",
+      "primary-300": "#45ABB5",
+      "primary-400": "#05738D",
+      "secondary-100": "#F7D796",
+      "secondary-200": "#E8BB3A",
+      "secondary-300": "#E3672A",
+      white: "#FFFFFF",
     },
   },
   plugins: [],
