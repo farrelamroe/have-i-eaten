@@ -8,19 +8,26 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "480px",
+      },
       fontFamily: {
         urbanist: ["Urbanist"],
+        crimson: ["Crimson Pro"],
       },
     },
     colors: {
-      "primary-100": "#C0DBC6",
-      "primary-200": "#CACA59",
-      "primary-300": "#45ABB5",
-      "primary-400": "#05738D",
+      primary: {
+        100: "#C0DBC6",
+        200: "#CACA59",
+        300: "#45ABB5",
+        400: "#05738D",
+      },
       "secondary-100": "#F7D796",
       "secondary-200": "#E8BB3A",
       "secondary-300": "#E3672A",
       white: "#FFFFFF",
+      grey: "#D9D9D9",
     },
   },
   plugins: [],
