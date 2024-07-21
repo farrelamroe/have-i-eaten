@@ -8,5 +8,3 @@ export function Container(props: any) {
     </main>
   );
 }
-
-export default Container;

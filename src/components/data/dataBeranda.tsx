@@ -1,4 +1,4 @@
-const data = [
+export const dataBeranda = [
   {
     title: "Gaya Hidup",
     text: "Refleksikan rutinitas aktivitas fisik, manajemen waktu, kebersihan diri, keamanan pangan, dan kebiasaan merokok",
@@ -24,5 +24,3 @@ const data = [
     buttonText: "Pelajari",
   },
 ];
-
-export default data;

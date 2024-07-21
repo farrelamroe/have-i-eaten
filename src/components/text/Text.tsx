@@ -7,9 +7,7 @@ export function Text({ children, size, className }: any) {
   } else if (size === "lg") {
     fontSize = "text-[14px] lg:text-[16px] leading-[18px] lg:leading-[20px]";
   }
-  return (
-    <h1 className={`text-justify ${fontSize} ${className}`}>{children}</h1>
-  );
+  return <h1 className={`${fontSize} ${className}`}>{children}</h1>;
 }
 
 export default Text;
