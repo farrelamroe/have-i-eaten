@@ -5,15 +5,10 @@ import {
   H2,
   H3,
   H4,
-  H5,
+  Footer,
   Text,
   ListCard,
-  ListPertanyaan,
-  Form,
-  Textarea,
-  ButtonForm,
-  dataFooter,
-  dataForm,
+  Qna,
   dataBeranda,
 } from "@/components";
 import Image from "next/image";
@@ -96,6 +91,8 @@ export function Beranda() {
             size="lg"
             color="secondary-300"
             className="mx-auto mt-[64px] block"
+            href="/personalized-nutrition"
+            blank={false}
           />
         </Container>
         <Container className="mt-[24px] bg-white lg:flex lg:flex-row lg:px-[137px] lg:py-[79px]">
@@ -133,82 +130,8 @@ export function Beranda() {
           })}
         </div>
       </div>
-      <div className="relative h-full w-full bg-primary-300 p-[24px]">
-        <H1 className="pt-[24px] text-center font-urbanist font-bold text-white">
-          Ruang Tanya Jawab
-        </H1>
-        <div className="flex flex-col items-center justify-center overflow-hidden lg:flex-row">
-          <Image src="/image.png" alt="" height={700} width={700} />
-          <ListPertanyaan />
-        </div>
-        <div className="mx-auto block text-center">
-          <H3 className="mb-[10px] font-urbanist">Lihat lebih banyak</H3>
-          <Button
-            size="md"
-            text="Kirim Pertanyaan"
-            color="secondary-300"
-            className="mb-[64px]"
-          />
-        </div>
-      </div>
-      <Container>
-        <H1 className="mb-[45px] font-urbanist lg:mb-0">
-          Kontak kami melalui email
-        </H1>
-        <div className="flex flex-col items-center font-urbanist lg:flex-row">
-          <div className="mx-auto block w-full">
-            <form action="/submit" method="POST" className="space-y-4">
-              {dataForm.map(
-                ({ label, htmlFor, id, name, type, isRequired }) => {
-                  return (
-                    <Form
-                      key={type}
-                      htmlFor={htmlFor}
-                      label={label}
-                      id={id}
-                      name={name}
-                      isRequired={isRequired}
-                    />
-                  );
-                },
-              )}
-              <Textarea
-                htmlFor="message"
-                label="Message:"
-                id="message"
-                name="message"
-                isRequired={true}
-              />
-
-              <ButtonForm
-                size="xs"
-                text="Kirim"
-                color="secondary-300"
-                className=""
-              />
-            </form>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <Image src="/image.png" alt="image" width={379} height={379} />
-            <H3 className="mt-[64px] font-crimson font-bold text-primary-300">
-              Nutrition Hub for Gen Z
-            </H3>
-            <div className="mt-[40px] flex flex-row gap-x-[8px]">
-              {dataFooter.map(({ image }, i) => {
-                return (
-                  <Image
-                    key={i}
-                    src={image}
-                    alt="image"
-                    width={40}
-                    height={40}
-                  />
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </Container>
+      <Qna />
+      <Footer />
     </>
   );
 }

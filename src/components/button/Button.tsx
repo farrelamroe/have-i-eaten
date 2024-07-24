@@ -1,5 +1,5 @@
 export function Button(props: any) {
-  const { href, text, size, color, className } = props;
+  const { href, text, size, color, className, blank } = props;
   let buttonSize, buttonColor;
   if (size === "xs") {
     buttonSize =
@@ -40,7 +40,7 @@ export function Button(props: any) {
   return (
     <button
       className={`relative h-fit w-fit rounded-full font-urbanist text-white outline duration-300 hover:bg-white ${buttonSize} ${buttonColor} ${className}`}
-      onClick={() => window.open(href, "blank")}
+      onClick={() => window.open(href)}
     >
       {text}
     </button>

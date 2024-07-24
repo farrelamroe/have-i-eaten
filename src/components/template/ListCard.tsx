@@ -21,12 +21,16 @@ export function ListCard(props: any) {
           {text}
         </Text>
       </div>
-      <Button
-        text={buttonText}
-        size="lg"
-        color="secondary-300"
-        className="mx-auto block"
-      />
+      {buttonText != null ? (
+        <Button
+          text={buttonText}
+          size="lg"
+          color="secondary-300"
+          className="mx-auto block"
+        />
+      ) : (
+        <></>
+      )}
     </div>
   );
 }

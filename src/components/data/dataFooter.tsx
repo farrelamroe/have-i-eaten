@@ -1,17 +1,23 @@
 export const dataFooter = [
   {
-    image: "/image.png",
+    image: "/tiktok.svg",
+    href: "https://tiktok.com",
   },
   {
-    image: "/image.png",
+    image: "/youtube.svg",
+    href: "https://youtube.com",
   },
   {
-    image: "/image.png",
+    image: "/whatsapp.svg",
+    href: "https://wa.me/6289506144788",
   },
   {
-    image: "/image.png",
+    image: "/mail.svg",
+    href: "https://gmail.com",
   },
+
   {
-    image: "/image.png",
+    image: "/instagram.svg",
+    href: "https://instagram.com",
   },
 ];
