@@ -1,4 +1,4 @@
-import { PersonalizedNutrition } from "@/components";
+import { Navbar, PersonalizedNutrition } from "@/components";
 import Head from "next/head";
 
 export default function personalizedNutrition() {
@@ -9,6 +9,7 @@ export default function personalizedNutrition() {
         <link rel="icon" href="/image.png" />
       </Head>
       <main>
+        <Navbar />
         <PersonalizedNutrition />
       </main>
     </>

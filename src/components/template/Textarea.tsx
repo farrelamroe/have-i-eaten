@@ -1,5 +1,5 @@
 export function Textarea(props: any) {
-  const { label, htmlFor, id, name, isRequired } = props;
+  const { label, htmlFor, id, name, isRequired, value, onChange } = props;
   return (
     <div>
       <label
@@ -12,7 +12,9 @@ export function Textarea(props: any) {
         id={id}
         name={name}
         required={isRequired}
-        className="border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full lg:max-w-[500px] rounded-md border px-3 py-2 shadow-sm focus:outline-none sm:text-sm"
+        value={value}
+        onChange={onChange}
+        className="border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full rounded-md border px-3 py-2 shadow-sm focus:outline-none sm:text-sm lg:max-w-[500px]"
       />
     </div>
   );

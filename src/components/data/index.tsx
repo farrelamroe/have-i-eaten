@@ -2,3 +2,8 @@ export * from "./dataFooter";
 export * from "./dataPertanyaan";
 export * from "./dataBeranda";
 export * from "./dataKebutuhanEnergi";
+export * from "./dataNavbar";
+export * from "./dataGayaHidup";
+export * from "./dataSosioEkonomi";
+export * from "./dataKebiasaanMakan";
+export * from "./dataPengetahuan";

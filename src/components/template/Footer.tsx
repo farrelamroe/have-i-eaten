@@ -1,12 +1,4 @@
-import {
-  Container,
-  H1,
-  H2,
-  Form,
-  Textarea,
-  ButtonForm,
-  dataFooter,
-} from "@/components";
+import { ButtonSend, Container, dataFooter, Form, H1, H2, Textarea } from "@/components";
 import Image from "next/image";
 import { useState, ChangeEvent, FormEvent } from "react";
 
@@ -107,7 +99,7 @@ export function Footer() {
                 isRequired={true}
               />
 
-              <ButtonForm
+              <ButtonSend
                 size="xs"
                 text="Kirim"
                 color="secondary-300"
@@ -121,15 +113,11 @@ export function Footer() {
               Nutrition Hub for Gen Z
             </H2>
             <div className="mt-[40px] flex flex-row gap-x-[8px]">
-              {dataFooter.map(({ image }, i) => {
+              {dataFooter.map(({ image, href }, i) => {
                 return (
-                  <Image
-                    key={i}
-                    src={image}
-                    alt="image"
-                    width={40}
-                    height={40}
-                  />
+                  <a href={href} key={i}>
+                    <Image src={image} alt="image" width={40} height={40} />
+                  </a>
                 );
               })}
             </div>
