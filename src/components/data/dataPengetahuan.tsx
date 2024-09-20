@@ -2,25 +2,29 @@ export const dataPengetahaun = [
   {
     title: "Zat Gizi",
     text: null,
-    image: "/image.png",
+    image: "/zat-gizi.png",
     buttonText: "Pelajari",
+    href: "/404",
   },
   {
     title: "Gizi Seimbang",
     text: null,
-    image: "/image.png",
+    image: "/gizi-seimbang.png",
     buttonText: "Pelajari",
+    href: "/404",
   },
   {
     title: "Prinsip Label Kemasan",
     text: null,
-    image: "/image.png",
+    image: "/prinsip-label-kemasan.png",
     buttonText: "Pelajari",
+    href: "/404",
   },
   {
     title: "Jenis Diet",
     text: null,
-    image: "/image.png",
+    image: "/diet.png",
     buttonText: "Pelajari",
+    href: "/404",
   },
 ];

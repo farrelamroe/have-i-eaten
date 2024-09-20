@@ -46,41 +46,36 @@ export function Beranda() {
   }
   return (
     <>
-      <Container className="h-screen bg-white">
-        <Image
-          src="/hero.png"
-          alt=""
-          width={1000}
-          height={1000}
-          className="absolute right-0 top-0 max-w-[55vw]"
-        />
+      <Container
+        className="h-screen bg-white"
+       background="/hero.png"
+      >
         <div className="relative top-[50%] z-0 lg:pl-[64px]">
-          <H1 className="font-crimson font-bold text-secondary-300">
+          <H1 className="font-crimson font-bold text-secondary-200">
             Have I Eaten
           </H1>
-          <H3 className="font-crimson text-primary-400">
+          <H3 className="font-crimson text-primary-200">
             Nutrition Hub for Gen Z
           </H3>
           <Text
             size="lg"
-            className="max-w-[240px] py-[20px] font-urbanist md:max-w-[360px] xl:max-w-[540px]"
+            className="max-w-[240px] py-[20px] font-urbanist md:max-w-[360px] xl:max-w-[540px] text-white"
           >
-            Website ini menyajikan informasi yang bersifat evidence-based
-            terkait personalized nutrition dengan fokus utama gizi pada usia
-            remaja dan dewasa awal.
+            Have I Eaten merupakan platform literasi gizi digital yang
+            menyajikan informasi berbasis ilmiah terkait personalized nutrition.
           </Text>
-          <Button text="Daftar Jadi Member" size="xs" color="primary-400" />
+          <Button text="Daftar Jadi Member" size="xs" color="primary-400" href="/404" />
         </div>
       </Container>
       <div className="bg-secondary-300 p-[24px]">
         <Container className="rounded-[20px] bg-white">
           <div className="flex flex-row items-center justify-center gap-x-5 xl:gap-x-[128px]">
             <Image
-              src="/hero.png"
+              src="/logo.png"
               alt=""
               width={1000}
               height={1000}
-              className="max-h-[200px] max-w-[100px] object-cover sm:max-w-[400px] md:max-h-[300px] h-full w-full"
+              className="h-full max-h-[200px] w-full max-w-[100px] object-cover sm:max-w-[400px] md:max-h-[300px]"
             />
             <div className="flex flex-col items-center justify-center lg:items-start">
               <HeadingTag className="font-semiboldlg:max-w-[505.3px] font-urbanist">
@@ -118,6 +113,7 @@ export function Beranda() {
                 size="xs"
                 color="primary-400"
                 className="mt-[16px]"
+                href="/404"
               />
             </div>
           </div>
@@ -159,7 +155,7 @@ export function Beranda() {
               gizi, hingga body image
             </Text>
           </div>
-          <Container className="gap-x-[24px] sm:grid sm:grid-cols-2 lg:grid-cols-4  rounded-[20px]">
+          <Container className="gap-x-[24px] rounded-[20px] sm:grid sm:grid-cols-2 lg:grid-cols-4">
             {dataBeranda.map(({ title, text, image, buttonText, href }) => {
               return (
                 <ListCard

@@ -7,26 +7,18 @@ import {
   Qna,
   Text,
 } from "@/components";
-import Image from "next/image";
 
 export function Pengetahuan() {
   return (
     <>
-      <Container className="h-screen bg-white">
-        <Image
-          src="/image.png"
-          alt=""
-          width={1000}
-          height={1000}
-          className="absolute right-0 top-0 h-full max-h-[300px] w-full max-w-[200px]"
-        />
+      <Container className="h-screen bg-white" background="/hero.png">
         <div className="relative top-[50%] z-0 lg:pl-[64px]">
-          <H1 className="font-crimson font-bold text-secondary-300">
+          <H1 className="font-crimson font-bold text-primary-200">
             Pengetahuan
           </H1>
           <Text
             size="regular"
-            className="max-w-[240px] py-[20px] text-justify font-urbanist md:max-w-[360px] xl:max-w-[540px]"
+            className="max-w-[240px] py-[20px] text-justify font-urbanist md:max-w-[360px] xl:max-w-[540px] text-white"
           >
             Pahami peran zat gizi dalam makanan terhadap kesehatan dan juga
             prinsip label kemasan

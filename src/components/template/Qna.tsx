@@ -20,17 +20,17 @@ export function Qna() {
   const swiperRef: any = useRef();
   return (
     <>
-      <div className="relative -z-0 h-full w-full bg-primary-300 p-[24px]">
+      <div className="relative -z-0 h-full w-full bg-primary-300 px-[64px]">
         <H1 className="pt-[24px] text-center font-urbanist font-bold text-white">
           Ruang Tanya Jawab
         </H1>
-        <div className="z-0 flex flex-col items-center justify-center overflow-hidden lg:flex-row">
+        <div className="z-0 flex flex-col items-center justify-center overflow-hidden lg:flex-row gap-x-[64px]">
           <Image
-            src="/image.png"
+            src="/qna.png"
             alt=""
-            height={700}
-            width={700}
-            className="relative -z-[100]"
+            height={500}
+            width={500}
+            className="relative -z-[100] max-w-[400px] pt-[64px] lg:pt-0"
           />
           <div className="relative z-[100] h-full w-full overflow-hidden">
             <Image
@@ -132,12 +132,13 @@ export function Qna() {
           </div>
         </div>
         <div className="mx-auto block text-center">
-          <H3 className="mb-[10px] font-urbanist">Lihat lebih banyak</H3>
+          <H3 className="mb-[10px] font-urbanist text-white">Lihat lebih banyak</H3>
           <Button
             size="md"
             text="Kirim Pertanyaan"
             color="secondary-300"
             className="mb-[64px]"
+            href="https://gmail.com"
           />
         </div>
       </div>

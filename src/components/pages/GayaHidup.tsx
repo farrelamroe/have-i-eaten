@@ -10,26 +10,18 @@ import {
   Qna,
   Text,
 } from "@/components";
-import Image from "next/image";
 
 export function GayaHidup() {
   return (
     <>
-      <Container className="h-screen">
-        <Image
-          src="/image.png"
-          alt=""
-          width={1000}
-          height={1000}
-          className="absolute right-0 top-0 h-full max-h-[300px] w-full max-w-[200px]"
-        />
+      <Container className="h-screen" background="/hero.png">
         <div className="relative top-[50%] z-0 lg:pl-[64px]">
-          <H1 className="font-crimson font-bold text-secondary-300">
+          <H1 className="font-crimson font-bold text-secondary-200">
             Gaya Hidup
           </H1>
           <Text
             size="regular"
-            className="max-w-[240px] py-[20px] text-justify font-urbanist md:max-w-[360px] xl:max-w-[540px]"
+            className="max-w-[240px] py-[20px] text-justify font-urbanist text-white md:max-w-[360px] xl:max-w-[540px]"
           >
             Refleksikan rutinitas aktivitas fisik, manajemen waktu, kebersihan
             diri, keamanan pangan, dan kebiasaan merokok
@@ -46,29 +38,34 @@ export function GayaHidup() {
             sangat penting.
           </H4>
           <div className="mt-[24px] flex flex-row flex-wrap justify-center gap-[24px]">
-            {dataAktivitasFisik.map(({ title, text, image, buttonText }) => {
-              return (
-                <ListCard
-                  key={title}
-                  title={title}
-                  text={text}
-                  image={image}
-                  buttonText={buttonText}
-                  className="max-w-[300px] rounded-[16px] bg-primary-300 p-[16px] text-white shadow-2xl"
-                />
-              );
-            })}
+            {dataAktivitasFisik.map(
+              ({ title, text, image, buttonText, href }) => {
+                return (
+                  <ListCard
+                    key={title}
+                    title={title}
+                    text={text}
+                    image={image}
+                    buttonText={buttonText}
+                    href={href}
+                    className="max-w-[300px] rounded-[16px] bg-primary-300 p-[16px] text-white shadow-2xl"
+                  />
+                );
+              },
+            )}
           </div>
           <div className="mt-[100px] flex flex-row justify-center gap-x-[24px]">
             <Button
               size="lg"
               text="Physical Activity Guidelines"
               color="primary-300"
+              href="/404"
             />
             <Button
               size="lg"
               text="Tips Melakukan Aktivitas Fisik"
               color="primary-300"
+              href="/404"
             />
           </div>
         </Container>
@@ -83,7 +80,7 @@ export function GayaHidup() {
             sangat penting.
           </H4>
           <div className="mt-[24px] flex flex-row flex-wrap justify-center gap-[24px]">
-            {dataCaraMakan.map(({ title, text, image, buttonText }) => {
+            {dataCaraMakan.map(({ title, text, image, buttonText, href }) => {
               return (
                 <ListCard
                   key={title}
@@ -91,6 +88,7 @@ export function GayaHidup() {
                   text={text}
                   image={image}
                   buttonText={buttonText}
+                  href={href}
                   className="max-w-[300px] rounded-[16px] bg-primary-300 p-[16px] text-white shadow-2xl"
                 />
               );

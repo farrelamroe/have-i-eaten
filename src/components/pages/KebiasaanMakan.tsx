@@ -9,26 +9,18 @@ import {
   Qna,
   Text,
 } from "@/components";
-import Image from "next/image";
 
 export function KebiasaanMakan() {
   return (
     <>
-      <Container className="h-screen bg-white">
-        <Image
-          src="/image.png"
-          alt=""
-          width={1000}
-          height={1000}
-          className="absolute right-0 top-0 h-full max-h-[300px] w-full max-w-[200px]"
-        />
+      <Container className="h-screen bg-white" background="/hero.png">
         <div className="relative top-[50%] z-0 lg:pl-[64px]">
-          <H1 className="font-crimson font-bold text-secondary-300">
+          <H1 className="font-crimson font-bold text-primary-200">
             Kebiasaan Makan
           </H1>
           <Text
             size="regular"
-            className="max-w-[240px] py-[20px] text-justify font-urbanist md:max-w-[360px] xl:max-w-[540px]"
+            className="max-w-[240px] py-[20px] text-justify font-urbanist md:max-w-[360px] xl:max-w-[540px] text-white"
           >
             Cari tahu bagaimana asupan zat gizi, frekuensi, persiapan, porsi,
             dan pemilihan jenis makanan
@@ -58,7 +50,7 @@ export function KebiasaanMakan() {
           <H1 className="text-center font-crimson text-secondary-300">
             Manajemen Pola Makan
           </H1>
-          <H4 className="text-center font-urbanist">
+          <H4 className="text-center font-urbanist text-white">
             Apapun aktivitas harianmu, mengatur pola makan merupakan hal yang
             sangat penting.
           </H4>

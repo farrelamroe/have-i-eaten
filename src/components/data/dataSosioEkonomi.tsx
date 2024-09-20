@@ -2,25 +2,29 @@ export const dataSosioEkonomi = [
   {
     title: "Sosial",
     text: null,
-    image: "/image.png",
+    image: "/sosial.png",
     buttonText: "Pelajari",
+    href: "/404",
   },
   {
     title: "Ekonomi",
     text: null,
-    image: "/image.png",
+    image: "/ekonomi.png",
     buttonText: "Pelajari",
+    href: "/404",
   },
   {
     title: "Pendidikan dan Pekerjaan",
     text: null,
-    image: "/image.png",
+    image: "/pendidikan-pekerjaan.png",
     buttonText: "Pelajari",
+    href: "/404",
   },
   {
     title: "Akses Pangan",
     text: null,
-    image: "/image.png",
+    image: "/akses-pangan.png",
     buttonText: "Pelajari",
+    href: "/404",
   },
 ];

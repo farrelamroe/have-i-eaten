@@ -13,21 +13,14 @@ import Image from "next/image";
 export function PersonalizedNutrition() {
   return (
     <>
-      <Container className="h-screen bg-white">
-        <Image
-          src="/image.png"
-          alt=""
-          width={1000}
-          height={1000}
-          className="absolute right-0 top-0 h-[400px] w-[100px]"
-        />
+      <Container className="h-screen bg-white" background="/hero.png">
         <div className="relative top-[40%] z-0 lg:pl-[64px]">
-          <H2 className="font-crimson font-bold text-secondary-300">
+          <H2 className="font-crimson font-bold text-primary-200">
             Personalized Nutrition
           </H2>
           <Text
             size="regular"
-            className="max-w-[240px] py-[20px] text-justify font-urbanist md:max-w-[360px] xl:max-w-[540px]"
+            className="max-w-[240px] py-[20px] text-justify font-urbanist md:max-w-[360px] xl:max-w-[540px] text-white"
           >
             Personalized nutrition merupakan konsep yang menunjukkan bahwa
             setiap individu memiliki respons yang berbeda terhadap zat gizi dan
@@ -45,13 +38,13 @@ export function PersonalizedNutrition() {
       <div className="bg-grey p-[24px]">
         <Container className="rounded-[20px] bg-white">
           <Image
-            src="/image.png"
+            src="/people.jpg"
             alt=""
-            width={500}
-            height={500}
-            className="mx-auto block"
+            width={1000}
+            height={1000}
+            className="mx-auto block h-full w-full max-w-[75vw]"
           />
-          <H2 className="mx-auto block max-w-[736px] text-center font-urbanist">
+          <H2 className="mx-auto block max-w-[736px] text-center font-urbanist mt-[24px]">
             Apa saja yang membuat kebutuhan energi dan zat gizi setiap individu
             berbeda?
           </H2>
@@ -73,13 +66,13 @@ export function PersonalizedNutrition() {
       </div>
       <div className="bg-grey p-[24px]">
         <Container className="rounded-[20px] bg-white">
-          <div className="flex flex-col items-center justify-center lg:flex-row">
+          <div className="flex flex-col items-center justify-center lg:flex-row gap-x-[24px]">
             <Image
-              src="/image.png"
+              src="/dna.jpg"
               alt=""
-              width={500}
-              height={500}
-              className="mx-auto block"
+              width={1000}
+              height={1000}
+              className="mx-auto block max-w-[50vw]"
             />
             <H5 className="font-urbanist">
               Dalam konsep Personalized Nutrition, <strong>Gen</strong> memiliki

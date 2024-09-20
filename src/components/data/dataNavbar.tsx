@@ -1,22 +1,22 @@
 export const dataNavbar = [
   {
-    href: "/",
+   href: "/404",
     title: "Petunjuk",
   },
   {
-    href: "/",
+   href: "/404",
     title: "Fitur",
   },
   {
-    href: "/",
+   href: "/404",
     title: "Produk",
   },
   {
-    href: "/",
+   href: "/404",
     title: "QNA",
   },
   {
-    href: "/",
+   href: "/404",
     title: "Tentang",
   },
 ];

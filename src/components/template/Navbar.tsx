@@ -32,21 +32,15 @@ export function Navbar() {
         className={`fixed z-[110] h-[82px] w-[100%] transform rounded-b-[8px] text-center font-urbanist text-white duration-[2000ms] ${hidden ? "-top-full" : "top-0"}`}
       >
         <div className="relative flex h-full flex-row items-center justify-between rounded-b-[8px] bg-primary-300 px-5 shadow-md">
-          <div className="flex flex-row items-center">
-            <Link href="/">
-              <Image
-                src="/image.png"
-                width={50}
-                height={40}
-                alt=""
-                className="relative items-center"
-              />
-            </Link>
-            <P className="font-jakarta gap-x-[9px] text-start text-[18px] font-bold">
-              Have I<br />
-              Eaten
-            </P>
-          </div>
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              width={100}
+              height={1000}
+              alt=""
+              className="relative items-center"
+            />
+          </Link>
           <div className="relative z-40 hidden flex-row items-center justify-center gap-x-5 text-xl lg:flex lg:pr-20">
             {dataNavbar.map(({ title, href }) => {
               return (
