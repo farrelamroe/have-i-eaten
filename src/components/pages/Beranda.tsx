@@ -46,10 +46,7 @@ export function Beranda() {
   }
   return (
     <>
-      <Container
-        className="h-screen bg-white"
-       background="/hero.png"
-      >
+      <Container className="h-screen bg-white" background="/hero.png">
         <div className="relative top-[50%] z-0 lg:pl-[64px]">
           <H1 className="font-crimson font-bold text-secondary-200">
             Have I Eaten
@@ -59,12 +56,17 @@ export function Beranda() {
           </H3>
           <Text
             size="lg"
-            className="max-w-[240px] py-[20px] font-urbanist md:max-w-[360px] xl:max-w-[540px] text-white"
+            className="max-w-[240px] py-[20px] font-urbanist text-white md:max-w-[360px] xl:max-w-[540px]"
           >
             Have I Eaten merupakan platform literasi gizi digital yang
             menyajikan informasi berbasis ilmiah terkait personalized nutrition.
           </Text>
-          <Button text="Daftar Jadi Member" size="xs" color="primary-400" href="/404" />
+          <Button
+            text="Daftar Jadi Member"
+            size="xs"
+            color="primary-400"
+            href="/404"
+          />
         </div>
       </Container>
       <div className="bg-secondary-300 p-[24px]">

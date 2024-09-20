@@ -18,7 +18,7 @@ export function Pengetahuan() {
           </H1>
           <Text
             size="regular"
-            className="max-w-[240px] py-[20px] text-justify font-urbanist md:max-w-[360px] xl:max-w-[540px] text-white"
+            className="max-w-[240px] py-[20px] text-justify font-urbanist text-white md:max-w-[360px] xl:max-w-[540px]"
           >
             Pahami peran zat gizi dalam makanan terhadap kesehatan dan juga
             prinsip label kemasan

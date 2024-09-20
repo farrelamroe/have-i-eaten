@@ -20,7 +20,7 @@ export function PersonalizedNutrition() {
           </H2>
           <Text
             size="regular"
-            className="max-w-[240px] py-[20px] text-justify font-urbanist md:max-w-[360px] xl:max-w-[540px] text-white"
+            className="max-w-[240px] py-[20px] text-justify font-urbanist text-white md:max-w-[360px] xl:max-w-[540px]"
           >
             Personalized nutrition merupakan konsep yang menunjukkan bahwa
             setiap individu memiliki respons yang berbeda terhadap zat gizi dan
@@ -44,7 +44,7 @@ export function PersonalizedNutrition() {
             height={1000}
             className="mx-auto block h-full w-full max-w-[75vw]"
           />
-          <H2 className="mx-auto block max-w-[736px] text-center font-urbanist mt-[24px]">
+          <H2 className="mx-auto mt-[24px] block max-w-[736px] text-center font-urbanist">
             Apa saja yang membuat kebutuhan energi dan zat gizi setiap individu
             berbeda?
           </H2>
@@ -66,7 +66,7 @@ export function PersonalizedNutrition() {
       </div>
       <div className="bg-grey p-[24px]">
         <Container className="rounded-[20px] bg-white">
-          <div className="flex flex-col items-center justify-center lg:flex-row gap-x-[24px]">
+          <div className="flex flex-col items-center justify-center gap-x-[24px] lg:flex-row">
             <Image
               src="/dna.jpg"
               alt=""

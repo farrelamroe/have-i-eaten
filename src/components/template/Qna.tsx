@@ -24,7 +24,7 @@ export function Qna() {
         <H1 className="pt-[24px] text-center font-urbanist font-bold text-white">
           Ruang Tanya Jawab
         </H1>
-        <div className="z-0 flex flex-col items-center justify-center overflow-hidden lg:flex-row gap-x-[64px]">
+        <div className="z-0 flex flex-col items-center justify-center gap-x-[64px] overflow-hidden lg:flex-row">
           <Image
             src="/qna.png"
             alt=""
@@ -132,7 +132,9 @@ export function Qna() {
           </div>
         </div>
         <div className="mx-auto block text-center">
-          <H3 className="mb-[10px] font-urbanist text-white">Lihat lebih banyak</H3>
+          <H3 className="mb-[10px] font-urbanist text-white">
+            Lihat lebih banyak
+          </H3>
           <Button
             size="md"
             text="Kirim Pertanyaan"

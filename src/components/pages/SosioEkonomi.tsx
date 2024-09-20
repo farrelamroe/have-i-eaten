@@ -11,14 +11,14 @@ import {
 export function SosioEkonomi() {
   return (
     <>
-      <Container className="h-screen" background='/hero.png'>
+      <Container className="h-screen" background="/hero.png">
         <div className="relative top-[50%] z-0 lg:pl-[64px]">
           <H1 className="font-crimson font-bold text-primary-200">
             Sosio Ekonomi
           </H1>
           <Text
             size="regular"
-            className="max-w-[240px] py-[20px] text-justify font-urbanist md:max-w-[360px] xl:max-w-[540px] text-white"
+            className="max-w-[240px] py-[20px] text-justify font-urbanist text-white md:max-w-[360px] xl:max-w-[540px]"
           >
             Pahami bagaiman faktor sosio-ekonomi mempengaruhi akses dan
             kebiasaan makan

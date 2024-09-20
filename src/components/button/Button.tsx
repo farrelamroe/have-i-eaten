@@ -50,7 +50,7 @@ export function Button(props: any) {
   );
 }
 
-export function ButtonSend(props: any){
+export function ButtonSend(props: any) {
   const { href, text, size, color, className } = props;
   let buttonSize, buttonColor;
   if (size === "xs") {

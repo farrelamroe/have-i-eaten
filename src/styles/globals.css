@@ -87,7 +87,7 @@
   left: 5px;
 }
 
-/* CSS for Send Button */ 
+/* CSS for Send Button */
 .buttonSend {
   font-family: inherit;
   display: flex;
@@ -137,30 +137,29 @@
 }
 
 .card {
- border-radius: 20px;
- position: relative;
- border: 2px solid #fff;
- transition: 0.5s ease-out;
- overflow: visible;
+  border-radius: 20px;
+  position: relative;
+  border: 2px solid #fff;
+  transition: 0.5s ease-out;
+  overflow: visible;
 }
 
 .card-button {
- transform: translate(-50%, 125%);
- position: absolute;
- left: 50%;
- bottom: 0;
- opacity: 0;
- transition: 0.3s ease-out;
+  transform: translate(-50%, 125%);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
 }
 
 /*Hover*/
 .card:hover {
- border-color: #008bf8;
- box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
 .card:hover .card-button {
- transform: translate(-50%, 50%);
- opacity: 1;
+  transform: translate(-50%, 50%);
+  opacity: 1;
 }
-
